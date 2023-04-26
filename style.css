@@ -229,6 +229,134 @@ header{
     color: #9B59B6;
 }
 /* FIN SECTION 2 */
+
+/* SECTION 3 */
+
+.mon-parcours{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.mon-parcours .title-parcours{
+    text-align: center;
+    padding: 30px 0;
+}
+.parcours-content{
+    max-width: 85%;
+}
+
+.web-parcours{
+    background-color: aliceblue;
+}
+h2 i{
+    padding-right: 15px;
+}
+.web-parcours h2{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.dev-web-infos h2{
+    color:#5cc3f3;
+}
+.web-parcours p:nth-child(2){
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+.web-parcours ul{
+    margin-top: 15px;
+    list-style: none;
+}
+.web-parcours ul li{
+    padding: 5px 10px 10px 0;
+}
+.dev-web-infos ul li::before{
+    color: #5cc3f3;
+}
+
+.web-parcours{
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.web-parcours ul li::before{
+    content: '●';
+    padding-right: 10px;
+}
+.sas-web-infos h2{
+    color:orange;
+}
+.sas-web-infos ul li::before{
+    color: orange;
+}
+
+.signature-infos h2{
+    color:green;
+}
+.signature-infos ul li::before{
+    color: green;
+}
+
+.sos-web-infos ul li::before{
+    color: #9B59B6;
+}
+
+.sos-web-infos h2{
+    color:#9B59B6;
+
+}
+/* FIN SECTION 3 */
+
+/* PAGE CONTACT */
+.contact{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(230, 229, 229);
+}
+.contact .title-contact{
+    text-align: center;
+    padding: 30px 0;
+}
+.contact-content{
+    max-width: 85%;
+}
+.contact-content h3{
+    text-align: center;
+    font-weight: 200;
+}
+
+
+.same-infos{
+    
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.tel-infos{
+    color: #3498DB;
+    background-color: #E0EFF9;
+}
+.mail-infos{
+    color: rgb(255, 166, 0);
+    background-color: rgb(255, 217, 147);
+}
+.localisation-infos{
+    background-color: #DFF7E9;
+    color: #2ECC71;
+}
+.same-infos i{
+    font-size: 60px;
+    margin: 10px 0;
+}
+
+.same-infos p{
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+/* FIN CONTACT */
 @media (min-width: 700px){
     .logo-navbar button{
         display: none;
