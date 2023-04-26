@@ -1,11 +1,14 @@
+
 const btnNavBar = document.getElementById('show-menu');
 const navBar = document.querySelector('.navbar');
-const navLinks = document.querySelector('.btn-nav');
+const navLinks = document.querySelector('.navbar');
 
 navLinks.addEventListener('click', closeNav);
 
 function closeNav(){
-    showMenu();
+    if(navBar.style.display == 'flex'){
+        navBar.style.display = 'none';
+    }
 }
 
 
