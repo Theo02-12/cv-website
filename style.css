@@ -387,7 +387,9 @@ footer h5{
     margin-bottom: 20px;
 }
 /*FIN FOOTER */
-@media (min-width: 700px){
+
+
+@media screen and (min-width: 700px){
     .logo-navbar button{
         display: none;
     }
