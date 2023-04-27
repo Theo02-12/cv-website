@@ -16,9 +16,10 @@ header{
     justify-content: space-between;
 }
 .logo-navbar img{
-    padding-top: 8px;
+    margin-top: 10px;
     object-fit: cover;
-    width: 120px;
+    width: 100px;
+    height: 100px;
 }
 .nav-bar{
     width: 100%;
@@ -195,7 +196,7 @@ header{
     margin-bottom: 10px;
 }
 .title-front{
-    color: aqua;
+    color: #5cc3f3
 }
 .title-responsive{
     color: green;
