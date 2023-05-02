@@ -203,9 +203,7 @@ header{
 
 .portrait img{
     object-fit: cover;
-    width: 140px;
-    height: 140px;
-    background-color: lightgray;
+    width: 100px;
     border-radius: 10px 10px 0 0;
     
 }
@@ -508,7 +506,7 @@ footer ul li a{
 .paper{
     color: grey;
 }
-footer h5{
+footer p{
     text-align: center;
     margin-bottom: 20px;
 }

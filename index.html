@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Cv">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>CV - Théo</title>
 </head>
 <body>
@@ -18,19 +19,19 @@
             <button id="show-menu" onclick="showMenu()" aria-label="navbar"><i class="fa-solid fa-bars"></i></button>
             <div class="nav-bar">
                 <ul class="navbar">
-                    <li class="btn-nav"><a href="#header"><i class="fa-solid fa-home"></i></a></li>
-                    <li class="btn-nav"><a href="#about-me">À PROPOS</a></li>
-                    <li class="btn-nav"><a href="#competences">COMPÉTENCES</a></li>
-                    <li class="btn-nav"><a href="#parcours">PARCOURS</a></li>
-                    <li class="btn-nav"><a href="#contact">CONTACT</a></li>
+                    <li class="btn-nav"><a href="#header" aria-label="haut de page"><i class="fa-solid fa-home"></i></a></li>
+                    <li class="btn-nav"><a href="#about-me" aria-label="a propos">À PROPOS</a></li>
+                    <li class="btn-nav"><a href="#competences" aria-label="skils">COMPÉTENCES</a></li>
+                    <li class="btn-nav"><a href="#parcours" aria-label="parcours">PARCOURS</a></li>
+                    <li class="btn-nav"><a href="#contact" aria-label="contact">CONTACT</a></li>
                 </ul>
             </div>
             
         </div>
         <div class="header-content">
-                <h1>Bonjour, je m'appelle Théo et je suis,</h1>
-                <h2>Développeur web et web mobile</h2>
-                <h3>Je suis actuellement en recherche d'un stage pour début septembre</h3>
+            <h1>Bonjour, je m'appelle Théo et je suis,</h1>
+            <h2>Développeur web et web mobile</h2>
+            <h3>Je suis actuellement en recherche d'un stage pour début septembre</h3>
         </div>
         <div class="icons-content">
             <span>
@@ -51,13 +52,13 @@
             </span>
         </div>
     </header>
-
-
-
-
+    
+    
+    
+    
     <section class="section-1" id="about-me">
         <div class="my-infos">
-
+            
             <div class="picture-infos">
                 <div class="portrait">
                     <img src="photo.webp" alt="photo">
@@ -70,7 +71,7 @@
                     <p><b>Hobbies:</b> Musculation, jeux-vidéos, automobile</p>
                 </div>
             </div>
-
+            
             <div class="about-me-text">
                 <p>
                     Actuellement en formation de développeur web et web mobile dans l'organisme de formation Simplon, je suis activement à la recherche d'un stage afin de pouvoir mettre en oeuvre ce que j'ai appris durant ma formation. <br />
@@ -78,26 +79,26 @@
                     <br />
                     
                     Aujourd'hui le développement web et un domaine qui me passionne réellement et
-                     je profite du temps dont je dispose pour pouvoir enrichir mes connaissances et toujours apprendre des nouvelles technologies. <br />
-                     <br />
-    
-                     Après avoir enchaîné les petits boulots, j'ai commencé à apprendre le développement web avec HTML , CSS et JavaScript en autodidacte avec le site OpenClassrooms. J'ai directement accroché à ce domaine et je souhaite vraiment en faire mon métier. De ce fait je travaille beaucoup pour me donner les moyens de réussir.
+                    je profite du temps dont je dispose pour pouvoir enrichir mes connaissances et toujours apprendre des nouvelles technologies. <br />
+                    <br />
+                    
+                    Après avoir enchaîné les petits boulots, j'ai commencé à apprendre le développement web avec HTML , CSS et JavaScript en autodidacte avec le site OpenClassrooms. J'ai directement accroché à ce domaine et je souhaite vraiment en faire mon métier. De ce fait je travaille beaucoup pour me donner les moyens de réussir.
                 </p>
             </div>
             
         </div>
         <div class="button">
-                <a href="#contact">Me contacter</a>
-                <a href="CV-theo.pdf" target="_blank">Mon Cv</a>
+            <a href="#contact">Me contacter</a>
+            <a href="CV-theo.pdf" target="_blank">Mon Cv</a>
         </div>
     </section>
     <section class="section-2" id="competences">
         <div class="mes-competences">
             <div class="skill-content">
                 <h3>Compétences</h3>
-
+                
                 <div class="skill-icons" data-aos="fade-left">
-
+                    
                     <div class="front-skill" id="front">
                         <h2 class="title-front">Front-end</h2>
                         <p>Création et intégration de site web et applications mobiles responsives et répondant aux normes W3C</p>
@@ -147,7 +148,7 @@
                     </div>
                     <i class="fa-solid fa-code"></i>
                 </div>
-                    
+                
                 <div class="skill-icons" data-aos="fade-right">
                     <i class="fa-solid fa-server"></i>
                     <div class="front-skill">
@@ -184,7 +185,7 @@
                 </div>   
                 
                 <div class="skill-icons" data-aos="fade-left">
-
+                    
                     <div class="front-skill">
                         <h2 class="title-responsive">Responsive</h2>
                         <p>Création de site web responsive pour tous formats, mobile, tablette et ordinateur</p>
@@ -245,24 +246,24 @@
                     </div>
                     
                 </div>
-                    <div class="skill-icons" data-aos="fade-left">
-                        <div class="front-skill">
-                            <h2 class="title-front title-enviro">Environnement</h2>
-                            <div class="skill-ok">
-                                <div class="environnement-content">
-                                    <i class="fa-solid fa-computer"></i> <b>Systèmes:</b> Windows 10 & Mac Os
-                                    <br />
-                                    <i class="fa-solid fa-wrench"></i> <b>Outils:</b> GitHub, VS Code, Docker
-                                    <br />
-                                    <i class="fa-solid fa-person"></i> <b>Savoir-être:</b> Rigeur, détermination, capacité d'adaptation
-                                </div>
-                                
+                <div class="skill-icons" data-aos="fade-left">
+                    <div class="front-skill">
+                        <h2 class="title-front title-enviro">Environnement</h2>
+                        <div class="skill-ok">
+                            <div class="environnement-content">
+                                <i class="fa-solid fa-computer"></i> <b>Systèmes:</b> Windows 10 & Mac Os
+                                <br />
+                                <i class="fa-solid fa-wrench"></i> <b>Outils:</b> GitHub, VS Code, Docker
+                                <br />
+                                <i class="fa-solid fa-person"></i> <b>Savoir-être:</b> Rigeur, détermination, capacité d'adaptation
                             </div>
+                            
                         </div>
-                        <i class="fa-solid fa-wrench keys"></i>
                     </div>
+                    <i class="fa-solid fa-wrench keys"></i>
                 </div>
             </div>
+        </div>
     </section>
     <section class="section-3" id="parcours">
         
@@ -271,12 +272,12 @@
                 <div class="timeline">
                 </div>
                 <h2 class="title-parcours">Parcours</h2>
-
+                
                 <div class="dev-web-infos web-parcours" data-aos="fade-up">
                     <h2><i class="fa-solid fa-laptop"></i>Formation développeur web & web mobile</h2>
                     <p>Avril 2023 / En cours</p>
                     <p>Simplon Boulogne sur Mer</p>
-        
+                    
                     <ul>
                         <li>Conception et maquettage d’une application web</li>
                         <li>Développement d’une interface web</li>
@@ -285,35 +286,35 @@
                         <li>Frameworks avancés</li>
                     </ul>
                 </div>
-
+                
                 <div class="sas-web-infos web-parcours" data-aos="fade-up">
                     <h2><i class="fa-solid fa-computer"></i>Sas de pré-formation développeur intégrateur web</h2>
                     <p>mars 2023 / avril 2023</p>
                     <p>Simplon Boulogne sur Mer</p>
-        
+                    
                     <ul>
                         <li>Conception et maquettage d’une application web</li>
                         <li>Développement d’une interface web</li>                
                         <li>Requête via une API REST sur un headless CMS (Strapi)</li>
                     </ul>
                 </div>
-
+                
                 <div class="signature-infos web-parcours" data-aos="fade-up">
                     <h2><i class="fa-solid fa-wrench"></i>Ouvrier d'éxecution</h2>
                     <p>avril 2022 / juin 2022</p>
                     <p>Signature - Isques</p>
-        
+                    
                     <ul>
                         <li>Marquage au sol</li>
                         <li>Montage et installation de panneaux de signalisations</li>                
                     </ul>
                 </div>
-
+                
                 <div class="sos-web-infos web-parcours" data-aos="fade-up">
                     <h2><i class="fa-solid fa-computer"></i>Technicien informatique stagiaire</h2>
                     <p>4 stages de 4 semaines</p>
                     <p>SOS Depan'Ordi</p>
-        
+                    
                     <ul>
                         <li>Montage et démontage de pc</li>
                         <li>Dépannage pc fixe, portable et gamer</li>
@@ -324,7 +325,7 @@
                     <h2><i class="fa-solid fa-graduation-cap"></i>Bac Pro Systèmes Numériques</h2>
                     <p>2017 - 2020</p>
                     <p>Lycée Branly</p>
-        
+                    
                     <ul>
                         <li>Obtention du diplôme avec mention bien</li>                        
                     </ul>
@@ -354,7 +355,7 @@
                         <p>Boulogne sur Mer</p>
                     </div>
                 </div>
-
+                
             </div>
         </div>
     </section>
@@ -362,19 +363,20 @@
         <ul>
             <li><a href="https://github.com/Theo02-12" target="_blank" aria-label="Mon GitHub"><i class="fa-brands fa-github"></i></a></li>
             <li class="linkedin"><a href="https://www.linkedin.com/in/théo-couvelard-4089111b5/" target="_blank" aria-label="Mon Linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
-            <li class="paper"><a href="CV-theo.pdf" target="_blank"><i class="fa-solid fa-copy"></i></a></li>
+            <li class="paper"><a href="CV-theo.pdf" target="_blank" aria-label="Mon cv"><i class="fa-solid fa-copy"></i></a></li>
         </ul>
-
-        <h5>
+        
+        <p>
             Théo Couvelard &copy; 2023
             <br />
             Tous droits réservés
-        </h5>
+        </p>
     </footer>
-   
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="app.js"></script>
     <script>
         AOS.init();
-    </script>
+        </script>
 </body>
 </html>
