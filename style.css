@@ -408,13 +408,12 @@ h2 i{
     color: green;
 }
 
-.sos-web-infos ul li::before{
+.sos-web-infos ul li::before, .lycee-infos ul li::before{
     color: #9B59B6;
 }
 
 .sos-web-infos h2, .lycee-infos h2{
     color:#9B59B6;
-
 }
 
 
