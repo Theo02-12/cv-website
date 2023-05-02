@@ -145,7 +145,7 @@ header{
     cursor: pointer;
     transition: all .3s linear;
 }
-.icons-content span h3{
+.icons-content span p{
     padding-top: 10px;
     font-size: 13px;
     font-weight: 300;
