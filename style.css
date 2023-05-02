@@ -20,12 +20,14 @@ header{
 .logo-navbar img{
     object-fit: cover;
     width: 100px;
-    margin-top: 5px;
+    height: 40px;
+    margin-top: 15px;
 }
 .nav-bar{
     width: 100%;
     height: 100vh;
     position: fixed;
+    z-index: 10;
 }
 .nav-bar ul{
     list-style: none;
@@ -59,7 +61,7 @@ header{
     position: fixed;
     right: 10px;
     top: 10px;
-    z-index: 10;
+    z-index: 100;
     cursor: pointer;
     animation: color 1s  ease-in-out infinite alternate;
 }
@@ -79,6 +81,16 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 80px 0;
+    animation: spawn .8s ease-in alternate;
+}
+@keyframes spawn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 .header-content h1{
     font-weight: 300;
@@ -108,6 +120,19 @@ header{
     justify-content: space-evenly;
     margin-top: 30px;
     padding-bottom: 20px;
+    
+    animation: spawn2 1.5s ease-in-out;
+}
+@keyframes spawn2 {
+    0%{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+
+    }
 }
 .icons-content span{
     display: flex;
@@ -144,6 +169,8 @@ header{
 /* SECTION 1 */
 .section-1{
     padding-top: 30px;
+    display: flex;
+    flex-direction: column;
 }
 .my-infos{
     display: flex;
@@ -183,8 +210,6 @@ header{
     
 }
 .button{
-    position: absolute;
-    bottom: 0;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -201,11 +226,13 @@ header{
 }
 /* FIN SECTION 1 */
 /*SECTION 2 */
+
 .mes-competences{
     margin-top: 30px;
     background-color: rgb(230, 229, 229);
     display: flex;
     justify-content: center;
+    
 }
 .mes-competences h3{
     text-align: center;
@@ -213,6 +240,7 @@ header{
 }
 .skill-content{
     max-width: 85%;
+    
 }
 
 .front-skill{
@@ -304,11 +332,6 @@ header{
     max-width: 85%;
     position: relative;
 }
-
-.web-parcours{
-    background-color: aliceblue;
-    margin-left: 20px;
-}
 h2 i{
     padding-right: 15px;
 }
@@ -338,6 +361,33 @@ h2 i{
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 10px;
+    position: relative;
+    background-color: aliceblue;
+}
+.web-parcours::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    background-color: red;
+    border-radius: 10px;
+    left: -24px;
+    display: none;
+}
+.web-parcours:nth-of-type(2)::before{
+    background-color: #3498DB;
+}
+.web-parcours:nth-of-type(3)::before{
+    background-color: orange;
+}
+.web-parcours:nth-of-type(4)::before{
+    background-color: green;
+}
+.web-parcours:nth-of-type(5)::before{
+    background-color:#9B59B6;
+}
+.web-parcours:nth-of-type(6)::before{
+    background-color:#9B59B6;
 }
 .web-parcours ul li::before{
     content: '●';
@@ -361,10 +411,11 @@ h2 i{
     color: #9B59B6;
 }
 
-.sos-web-infos h2{
+.sos-web-infos h2, .lycee-infos h2{
     color:#9B59B6;
 
 }
+
 
 /* FIN SECTION 3 */
 
@@ -380,10 +431,18 @@ h2 i{
 }
 .contact-content{
     max-width: 85%;
+    margin-bottom: 20px;
 }
 .contact-content h3{
     text-align: center;
     font-weight: 200;
+}
+.contact-content a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    padding: 10px 0;
+    z-index: 10;
 }
 
 
@@ -435,6 +494,7 @@ footer ul li{
     cursor: pointer;
     font-size: 40px;
     padding: 15px;
+    z-index: 10;
 }
 footer ul li a{
     text-decoration: none;
@@ -477,9 +537,21 @@ footer h5{
         justify-content: center;
         top: 10px;
     }
+    .logo-navbar img{
+        margin: 0;
+    }
 }
 
 @media screen and (min-width: 1024px) {
+    .header-content h2{
+        font-size: 3vw;
+    }
+    .web-parcours{
+        margin-left: 20px;
+    }
+    .web-parcours::before{
+        display: block;
+    }
     .my-infos{
         flex-direction: row;
         width: 50%;
@@ -499,9 +571,10 @@ footer h5{
     .about-me-text p{
         font-size: 1.2em;
     }
+    
     .timeline{
     margin-bottom: 20px;
-    min-height: 91%;
+    min-height: 92%;
     width: 2px;
     background-color: rgb(218, 218, 218);
     display: flex;
@@ -532,7 +605,7 @@ footer h5{
         top: 535px;
     }
     .timeline > span:nth-child(4){
-        top: 710px;
+        top: 650px;
     }
     .timeline > span:nth-child(1) span{
         background-color: #007bb6;
@@ -546,6 +619,9 @@ footer h5{
     }
     
     .timeline > span:nth-child(4) span{
+        background-color: #9B59B6;
+    }
+    .timeline > span:nth-child(5) span{
         background-color: #9B59B6;
     }
     .skill-icons .fa-code, .fa-server, .fa-mobile, .fa-pen,.keys{
