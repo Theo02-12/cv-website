@@ -21,7 +21,7 @@ header{
     object-fit: cover;
     width: 100px;
     height: 40px;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 .nav-bar{
     width: 100%;
@@ -211,7 +211,7 @@ header{
 }
 .button{
     width: 100%;
-    display: flex;
+    display: none;
     justify-content: center;
 }
 .button button, .button a{
@@ -226,7 +226,9 @@ header{
 }
 /* FIN SECTION 1 */
 /*SECTION 2 */
-
+.section-2{
+    overflow-x: hidden;
+}
 .mes-competences{
     margin-top: 30px;
     background-color: rgb(230, 229, 229);
@@ -539,6 +541,9 @@ footer h5{
     }
     .logo-navbar img{
         margin: 0;
+    }
+    .button{
+        display: flex;
     }
 }
 
