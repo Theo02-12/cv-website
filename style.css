@@ -203,8 +203,8 @@ header{
 
 .portrait img{
     object-fit: cover;
-    width: 130px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     background-color: lightgray;
     border-radius: 10px 10px 0 0;
     
@@ -213,6 +213,7 @@ header{
     width: 100%;
     display: none;
     justify-content: center;
+    margin: 20px 0;
 }
 .button button, .button a{
     border: none;
@@ -230,7 +231,6 @@ header{
     overflow-x: hidden;
 }
 .mes-competences{
-    margin-top: 30px;
     background-color: rgb(230, 229, 229);
     display: flex;
     justify-content: center;
@@ -548,6 +548,12 @@ footer h5{
 }
 
 @media screen and (min-width: 1024px) {
+    .picture-infos{
+        width: 30%;
+    }
+    .about-me-text{
+        width: 70%;
+    }
     .header-content h2{
         font-size: 3vw;
     }
@@ -559,7 +565,7 @@ footer h5{
     }
     .my-infos{
         flex-direction: row;
-        width: 50%;
+        width: 60%;
     }
     .picture-infos{
         flex-direction: column;
